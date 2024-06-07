@@ -75,6 +75,7 @@ input {
     font-size: 16px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    margin-top: 20px;
 }
 input:focus {
     outline: none;
@@ -85,6 +86,7 @@ button {
     background: linear-gradient(135deg, #6b73ff, #000dff);
     border: none;
     height: 40px;
+    margin-top: 20px;
     width: 90px !important;
     border-radius: 30px;
     color: white;
@@ -97,4 +99,12 @@ button {
 button:hover {
     background: linear-gradient(135deg, #000dff, #6b73ff);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+#h1 {
+    background-color: royalblue;
+    color: black;
+    width: 100vw;
+    text-align: center;
+    margin: 0;
+    /* padding: 10px 0; */
 }
