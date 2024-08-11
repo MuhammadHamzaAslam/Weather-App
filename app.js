@@ -1,6 +1,7 @@
 let cityInput = document.getElementById('cityInput');
 let currentWeatherDiv = document.querySelector('.currentWeatherDiv');
 let Hour24Div = document.querySelector('.Hour24Div');
+let search = document.getElementById('search')
 let TenDaysWeatherDiv = document.querySelector('.TenDaysWeather');
 let apiKey = 'a27f0bfe7ee64bf9b7674937241108';
 
@@ -93,5 +94,9 @@ cityInput.addEventListener('keydown', (e) => {
   const cityInputValue = cityInput.value;
   if (e.key === "Enter" && cityInputValue) {
       getWeatherDetails(cityInputValue);
-  }
+    }
 });
+search.addEventListener('click',()=>{
+    const cityInputValue = cityInput.value;
+    getWeatherDetails(cityInputValue)
+})
