@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF7_MscSXeFOu8_gK--HWKHII3nEZJaxSmlQ&s" type="image/x-icon">
+    <link rel="shortcut icon" href="img/download-removebg-preview.png" type="image/x-icon">
 </head>
 <body>
-    <section>
+    <section class="weather-section">
         <div id="inputDiv">
-            <input type="text" name="" id="cityInput">
-            <button class="location"><box-icon name='current-location'></box-icon></button>
-            <button class="location" id="search">search</button>
+            <input type="text" id="cityInput" placeholder="Enter city name...">
+            <button class="location" id="search">Search</button>
         </div>
         <div class="currentWeatherDiv">
-            <div id="imgDiv">    
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="200px" alt="">
+            <div id="imgDiv">
+                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="150px" alt="">
             </div>
-            <div id="temperatureDiv">    
-                <h1>30* <span>C</span></h1>
-            </div>
-            <div id="description">    
-                <h1>Partly Cloudy</h1>
-            </div>
-            <div id="cityNameDiv">    
-                <h3>Karachi</h3>
+            <div id="weatherInfo">
+                <h1 id="temperature">30<span>°C</span></h1>
+                <h3 id="description">Partly Cloudy</h3>
+                <h3 id="cityNameDiv">Karachi</h3>
+                <div>    
+                    <h4 id="humidity">Humidity: 70%</h4>
+                    <h4 id="feelLike">Feels Like: 32°C</h4>
+                </div>
             </div>
         </div>
         <div class="Hour24Div">
@@ -35,171 +35,19 @@
                 <br>
                 <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
                 <br>
-                <span>15*c</span>
-            </div>
-            <div class="timeDiv">
-                <span>17:00</span>
+                <span>15°C</span>
                 <br>
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
-                <br>
-                <span>15*c</span>
-            </div>
-            <div class="timeDiv">
-                <span>17:00</span>
-                <br>
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
-                <br>
-                <span>15*c</span>
-            </div>
-            <div class="timeDiv">
-                <span>17:00</span>
-                <br>
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
-                <br>
-                <span>15*c</span>
-            </div>
-            <div class="timeDiv">
-                <span>17:00</span>
-                <br>
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
-                <br>
-                <span>15*c</span>
-            </div>
-            <div class="timeDiv">
-                <span>17:00</span>
-                <br>
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
-                <br>
-                <span>15*c</span>
-            </div>
-            <div class="timeDiv">
-                <span>17:00</span>
-                <br>
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
-                <br>
-                <span>15*c</span>
-            </div>
-            <div class="timeDiv">
-                <span>17:00</span>
-                <br>
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
-                <br>
-                <span>15*c</span>
-            </div>
-            <div class="timeDiv">
-                <span>17:00</span>
-                <br>
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
-                <br>
-                <span>15*c</span>
-            </div>
-            <div class="timeDiv">
-                <span>17:00</span>
-                <br>
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
-                <br>
-                <span>15*c</span>
-            </div>
-            <div class="timeDiv">
-                <span>17:00</span>
-                <br>
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
-                <br>
-                <span>15*c</span>
-            </div>
-            <div class="timeDiv">
-                <span>17:00</span>
-                <br>
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
-                <br>
-                <span>15*c</span>
-            </div>
-            <div class="timeDiv">
-                <span>17:00</span>
-                <br>
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
-                <br>
-                <span>15*c</span>
-            </div>
-            <div class="timeDiv">
-                <span>17:00</span>
-                <br>
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
-                <br>
-                <span>15*c</span>
-            </div>
-            <div class="timeDiv">
-                <span>17:00</span>
-                <br>
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
-                <br>
-                <span>15*c</span>
-            </div>
-            <div class="timeDiv">
-                <span>17:00</span>
-                <br>
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
-                <br>
-                <span>15*c</span>
-            </div>
-            <div class="timeDiv">
-                <span>17:00</span>
-                <br>
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
-                <br>
-                <span>15*c</span>
-            </div>
-            <div class="timeDiv">
-                <span>17:00</span>
-                <br>
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
-                <br>
-                <span>15*c</span>
-            </div>
-            <div class="timeDiv">
-                <span>17:00</span>
-                <br>
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
-                <br>
-                <span>15*c</span>
-            </div>
-            <div class="timeDiv">
-                <span>17:00</span>
-                <br>
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
-                <br>
-                <span>15*c</span>
-            </div>
-            <div class="timeDiv">
-                <span>17:00</span>
-                <br>
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
-                <br>
-                <span>15*c</span>
-            </div>
-            <div class="timeDiv">
-                <span>17:00</span>
-                <br>
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
-                <br>
-                <span>15*c</span>
-            </div>
-            <div class="timeDiv">
-                <span>17:00</span>
-                <br>
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
-                <br>
-                <span>15*c</span>
-            </div>
-            <div class="timeDiv">
-                <span>17:00</span>
-                <br>
-                <img src="https://www.svgrepo.com/show/199791/clouds-cloud.svg" height="40px" alt="">
-                <br>
-                <span>15*c</span>
+                <span>20%</span>
             </div>
         </div>
+        <div class="TenDaysWeather">
+            <div class="timeDiv">
+               
+            </div>
+        </div>
+
     </section>
     <script src="app.js"></script>
 </body>
+
 </html>

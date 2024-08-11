@@ -1,66 +1,118 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
-section{
-    height: 600px;
-    width: 500px;
-    border: 1px solid black;
-}
-#inputDiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-input{
-    height: 30px;
-    width: 80%;
-    margin-top: 20px;
+
+.weather-section {
+    background: white;
+    padding: 20px;
     border-radius: 10px;
-    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
 }
-.location{
-    margin-top: 20px;
-    margin-left: 10px;
-    background-color: wheat;
+
+#inputDiv {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+#cityInput {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button.location {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 1.3s ease;
 }
-.currentWeatherDiv{
-    height: 520px;
-    width: auto;
-    border-bottom: 1px solid black;
-    /* margin: 20px; */
-    margin-top: 30px;
-    padding-top: 10px;
+
+button.location:hover {
+    background-color: #00050a;
 }
-#imgDiv{
+
+.currentWeatherDiv {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
-#temperatureDiv {
+
+#imgDiv img {
+    margin-bottom: 10px;
+}
+
+#weatherInfo h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+#weatherInfo h3, #weatherInfo h4 {
+    margin: 5px 0;
+    font-weight: 300;
+}
+
+.Hour24Div {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    overflow-x: auto;
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-#cityNameDiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+
+.timeDiv {
+    min-width: 100px;
+    margin-right: 10px;
+    text-align: center;
 }
-.Hour24Div{
+
+.timeDiv img {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 480px) {
+    #inputDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cityInput {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button.location {
+        width: 100%;
+    }
+
+
+    .timeDiv {
+        width: 100%;
+    }
+}
+
+.dayDiv {
     display: flex;
     justify-content: space-evenly;
-    overflow-x: scroll;
-    gap: 40px;
+    align-items: center;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
