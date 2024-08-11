@@ -47,7 +47,7 @@ function displayTenDaysForecast(tenDaysData) {
 }
 
 async function getWeatherDetails(cityName) {
-  const ApiUrl = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${cityName}&days=10`;
+  const ApiUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${cityName}&days=10`;
   try {
       // console.log('Fetching weather data...');
       const response = await fetch(ApiUrl);
