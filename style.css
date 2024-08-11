@@ -1,110 +1,66 @@
- img{
-    height: 80px;
-    width: 80px;
-    /* border: 1px solid black; */
-    margin-left: 36px;
-}
-
-h1{
-    margin-left: 36px;
-}
-#main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#brand{
-    /* border: 1px solid red; */
-    width: 200px;
-    text-align: center;
-}
-#icon{
-    height: 20px !important;
-    width: 20px !important;
-    margin-left: 60px;
-    margin-top: 10px !important;
-} 
-*{
-    font-family: "poppins";
-    /* margin-left: 36px; */
-    margin: 2px;
-    padding: 2px;
-}
-#images{
-    display: flex;
-}
-#text{
-    display: flex;
-}
-p{
-    margin-left: 36px;
-}
-#p{
-    margin-left: 36px !important;
-}
-#name{
-    display: flex;
-}
-#p1{
-    margin-left: 60px;
-}
-#temp{
-    font-size: 26pt;
-    font-weight: 600;
-}
-#field{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* width: 400px; */
-    /* border: 1px solid red;   */
-    gap: 10px;
-}
-body{
-    background: #f0f2f5;
-}
-/* #field {
-    display: flex;
-} */
-input {
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    height: 40px;
-    width: 250px;
-    padding: 0 15px;
-    font-size: 16px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    margin-top: 20px;
-}
-input:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.5);
-}
-button {
-    background: linear-gradient(135deg, #6b73ff, #000dff);
-    border: none;
-    height: 40px;
-    margin-top: 20px;
-    width: 90px !important;
-    border-radius: 30px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-button:hover {
-    background: linear-gradient(135deg, #000dff, #6b73ff);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-#h1 {
-    background-color: royalblue;
-    color: black;
-    width: 100vw;
-    text-align: center;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    /* padding: 10px 0; */
+    padding: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+section{
+    height: 600px;
+    width: 500px;
+    border: 1px solid black;
+}
+#inputDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    height: 30px;
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+}
+.location{
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: wheat;
+    border: none;
+    border-radius: 5px;
+}
+.currentWeatherDiv{
+    height: 520px;
+    width: auto;
+    border-bottom: 1px solid black;
+    /* margin: 20px; */
+    margin-top: 30px;
+    padding-top: 10px;
+}
+#imgDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#temperatureDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#cityNameDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Hour24Div{
+    display: flex;
+    justify-content: space-evenly;
+    overflow-x: scroll;
+    gap: 40px;
 }
